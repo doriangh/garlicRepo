@@ -1,8 +1,9 @@
 PREFIX dbo: <http://dbpedia.org/ontology/>
 PREFIX dbp: <http://dbpedia.org/property/>
+PREFIX dbc: <http://dbpedia.org/resource/Category/>
 PREFIX schema: <http://schema.org/>
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 
-SELECT ?beverage WHERE {
-  ?beverage rdf:type dbo:Non-alcoholic_drink .
+SELECT ?x ?p WHERE {
+  ?beverage ?p dbc:Non-alcoholic_drink .
 } LIMIT 100
