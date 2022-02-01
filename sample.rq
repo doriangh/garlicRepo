@@ -1,4 +1,4 @@
 SELECT ?x ?p ?y 
 WHERE { 
   ?x ?p ?y . 
-} 
+} LIMIT 1
