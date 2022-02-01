@@ -4,5 +4,5 @@ PREFIX schema: <http://schema.org/>
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 
 SELECT ?beverage WHERE {
-  ?beverage rdf:subClassOf dbo:Non-alcoholic_drink .
+  ?beverage rdf:type dbo:Non-alcoholic_drink .
 } LIMIT 100
