@@ -1,3 +1,8 @@
+#+ summary: Get non-alcoholic drinks
+#+ endpoint: http://dbpedia.org/ontology
+#+ tags:
+#+  - non-alcoholic drinks
+
 PREFIX dbo: <http://dbpedia.org/ontology/>
 PREFIX dbp: <http://dbpedia.org/property/>
 PREFIX dbc: <http://dbpedia.org/resource/Category/>
