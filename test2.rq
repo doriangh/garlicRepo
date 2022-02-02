@@ -8,6 +8,7 @@ WHERE {
     ?location rdf:type dbo:Country ;
               dbp:populationCensus ?pop ;
               rdfs:label ?name .
+              FILTER (lang(?name) = 'en')
 }
 GROUP BY ?name
 ORDER BY DESC (?pop)
