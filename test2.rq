@@ -10,4 +10,4 @@ WHERE {
               rdfs:label ?name .
 }
 GROUP BY ?name
-ORDER BY DESC (?result)
+ORDER BY DESC (?pop)
