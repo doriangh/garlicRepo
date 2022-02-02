@@ -7,7 +7,7 @@ WHERE {
 
     ?location rdf:type dbo:Country ;
               rdfs:label ?name ;
-              dbp:populationCensus | dbo:populationTotal ?pop .
+              dbp:populationCensus ?pop .
               FILTER (lang(?name) = 'en')
 }
 GROUP BY ?name
