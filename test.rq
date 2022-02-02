@@ -11,11 +11,10 @@ PREFIX schema: <http://schema.org/>
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 
-SELECT ?beverage_id ?name ?description ?image WHERE {
+SELECT ?beverage_id ?name ?description WHERE {
    ?beverage_id dct:subject dbc:Non-alcoholic_drinks .
    ?beverage_id dbo:abstract ?description .
    ?beverage_id rdfs:label ?name .
-   ?beverage_id dbo:thumbnail ?image
    FILTER (lang(?description) = 'en')
    FILTER (lang(?name) = 'en')
 }
